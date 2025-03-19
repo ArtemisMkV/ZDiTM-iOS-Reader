@@ -22,8 +22,9 @@ const scheduleItems = [
     // musi mieć końcówkę .../tablica/ID
 ]
 
+// vvv Dalej już nie ważne dla Ciebie       vvv
 // vvv Ta część kodu jest jeszcze w robocie vvv
-//
+///////////////////////////////////////////////
 // Create and run widget or show data in app
 let widget = await createWidget()
 if (config.runsInWidget) {
@@ -91,15 +92,15 @@ async function displayDataInApp() {
 async function showScheduleSelector(items) {
     // Create a menu to select which schedule to view
     const alert = new Alert()
-    alert.title = "ZDITM Schedule"
-    alert.message = "Select a stop to view:"
+    alert.title = "ZDiTM Rozkłady"
+    alert.message = "Wybierz przystanek"
 
     // Add each schedule as an option with custom name
     items.forEach((item) => {
         alert.addAction(item.name)
     })
 
-    alert.addCancelAction("Cancel")
+    alert.addCancelAction("Anuluj")
 
     // Show the menu and get selection
     const selection = await alert.present()
