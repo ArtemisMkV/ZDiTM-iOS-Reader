@@ -1,0 +1,43 @@
+2025-03-19 18:26:17: Document ready state: complete
+2025-03-19 18:26:17: Found 10 list items
+2025-03-19 18:26:17: Processing item 0: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 0 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 1: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 1 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 2: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 2 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 3: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 3 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 4: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 4 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 5: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 5 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 6: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 6 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 7: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 7 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 8: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 8 has placeholders, skipping
+2025-03-19 18:26:17: Processing item 9: <li>
+                        <div class="row g-1">
+                            <div class="col col-l
+2025-03-19 18:26:17: Item 9 has placeholders, skipping
+2025-03-19 18:26:17: Total items found: 0
