@@ -90,26 +90,28 @@ async function displayDataInApp() {
 
 // Function to display schedule selection menu
 async function showScheduleSelector(items) {
-    // Create a menu to select which schedule to view
-    const alert = new Alert()
-    alert.title = "ZDiTM Rozkłady"
-    alert.message = "Wybierz przystanek"
+    // Create a table for selection
+    const table = new UITable()
+    table.showSeparators = true
 
-    // Add each schedule as an option with custom name
+    // Add title row
+    const titleRow = new UITableRow()
+    const titleCell = titleRow.addText("ZDiTM Rozkłady", "Wybierz przystanek")
+    titleCell.titleFont = Font.boldSystemFont(18)
+    titleRow.height = 60
+    table.addRow(titleRow)
+
+    // Add each schedule as a row
     items.forEach((item) => {
-        alert.addAction(item.name)
+        const row = new UITableRow()
+        row.addText(item.name)
+        row.onSelect = async () => {
+            const webView = new WebView()
+            await webView.loadURL(item.url)
+            await webView.present(true)
+        }
+        table.addRow(row)
     })
 
-    alert.addCancelAction("Anuluj")
-
-    // Show the menu and get selection
-    const selection = await alert.present()
-
-    // If canceled, return
-    if (selection === -1) return
-
-    // Show the selected schedule
-    const webView = new WebView()
-    await webView.loadURL(items[selection].url)
-    await webView.present(true)
+    await table.present()
 }
